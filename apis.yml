@@ -1,7 +1,14 @@
 aid: alume-biosciences
 name: Alume Biosciences
-description: 'Alume Biosciences is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Alume Biosciences is a clinical-stage biotechnology company in La Jolla, California,
+  developing nerve-targeted fluorescent agents for precision surgery. Its lead candidate, bevonescein
+  (ALM-488) — a peptide-dye conjugate co-invented by the late Nobel Laureate Dr. Roger Tsien and
+  surgeon Dr. Quyen Nguyen — is administered intravenously roughly an hour before an operation so
+  surgeons can see nerves illuminated in the surgical field and avoid inadvertent nerve injury. The
+  compound has FDA Fast Track designation, is in Phase 3 pivotal trials in head-and-neck surgery, and
+  the company has stated it plans a New Drug Application submission in 2026. Alume is a drug developer,
+  not a software vendor: it publishes no developer program, API, SDK or machine-readable specification.'
+image: https://alumebiosciences.com/wp-content/uploads/2019/08/apple-icon-180x180.png
 url: https://raw.githubusercontent.com/api-evangelist/alume-biosciences/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +19,13 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Pharmaceuticals
+- Clinical Trials
+- Surgery
+- Medical Imaging
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +34,44 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://alumebiosciences.com/
+- type: About
+  url: https://alumebiosciences.com/about-us/
+- type: Blog
+  url: https://alumebiosciences.com/news/
+- type: Contact
+  url: https://alumebiosciences.com/contact/
+- type: Careers
+  url: https://alumebiosciences.com/careers/
+- type: Twitter
+  url: https://twitter.com/alumebioscience
+- type: Instagram
+  url: https://instagram.com/alumebiosciences
+- type: DomainSecurity
+  url: security/alume-biosciences-domain-security.yml
+- type: LLMsTxt
+  url: llms/alume-biosciences-llms.txt
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Alume Biosciences is a clinical-stage drug developer whose entire web presence is a five-page
+    WordPress marketing site (about, news, careers, contact) with no developer, API or documentation
+    section anywhere in its sitemap; the only machine-readable endpoint on the host is the default
+    WordPress /wp-json/ CMS route index, which is site infrastructure and not a published API product.
+  evidence:
+  - url: https://alumebiosciences.com/openapi.json
+    status: 404
+  - url: https://alumebiosciences.com/.well-known/agent-card.json
+    status: 404
+  - url: https://alumebiosciences.com/llms.txt
+    status: 404
+  - url: https://alumebiosciences.com/wp-sitemap-posts-page-1.xml
+    status: 200
+  - url: https://github.com/alumebio
+    status: 404
+  checked: '2026-08-06'

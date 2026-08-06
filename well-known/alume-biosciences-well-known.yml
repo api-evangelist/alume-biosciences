@@ -1,0 +1,55 @@
+generated: '2026-08-06'
+method: probed
+source: live probes of https://alumebiosciences.com
+host: https://alumebiosciences.com
+result: none
+note: >-
+  Every /.well-known/ path returned the site's WordPress 404 template (HTTP 404 with an
+  HTML body). No discovery document of any kind is published. Recorded as evidence that
+  the surface was checked; no WellKnown or SecurityTxt pointer is wired because nothing
+  was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+contract_discovery:
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /v1/openapi.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /redoc
+  status: 404
+- path: /graphql
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /wp-json/
+  status: 200
+  note: >-
+    Default WordPress REST API route index (155 routes across wp/v2, oembed/1.0,
+    akismet/v1, redirection/v1, wordfence/v1, wp-site-health/v1, wp-block-editor/v1).
+    This is stock CMS infrastructure shipped by WordPress, not an API the company
+    designs, documents, versions or supports, so it is not registered as a provider API.
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
