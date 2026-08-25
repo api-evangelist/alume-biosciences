@@ -2,6 +2,13 @@
   "repo": "alume-biosciences",
   "feeds": [
     {
+      "source": "https://alumebiosciences.com/feed/",
+      "feed_url": "https://alumebiosciences.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://alumebiosciences.com/about-us/",
       "feed_url": "https://alumebiosciences.com/feed/",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-08-15T12:22:01Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
