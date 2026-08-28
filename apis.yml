@@ -8,6 +8,17 @@ description: 'Alume Biosciences is a clinical-stage biotechnology company in La 
   compound has FDA Fast Track designation, is in Phase 3 pivotal trials in head-and-neck surgery, and
   the company has stated it plans a New Drug Application submission in 2026. Alume is a drug developer,
   not a software vendor: it publishes no developer program, API, SDK or machine-readable specification.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://alumebiosciences.com/wp-content/uploads/2019/08/apple-icon-180x180.png
 url: https://raw.githubusercontent.com/api-evangelist/alume-biosciences/refs/heads/main/apis.yml
 x-type: company
